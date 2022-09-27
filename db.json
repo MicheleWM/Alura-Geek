@@ -1,0 +1,28 @@
+{
+  "produtos" : [
+    {
+      "tumbnail" : " /assets/img/produtos/console_1.png " ,
+      "category" : " Controlar " ,
+      "product_name" : " Controlar Xbox One " ,
+      "product_price" : " 50 " ,
+      "short_description" : " Controle " ,
+      "id" : 2
+    },
+    {
+      "tumbnail" : " /assets/img/produtos/console_1.png " ,
+      "category" : " Console 1 " ,
+      "product_name" : " Console 1 " ,
+      "product_price" : " 2500 " ,
+      "short_description" : " Console 1 " ,
+      "id" : 3
+    },
+    {
+      "tumbnail" : " /assets/img/produtos/console_3.png " ,
+      "category" : " Console 2 " ,
+      "product_name" : " Console 2 " ,
+      "product_price" : " 250 " ,
+      "short_description" : " Console 2 " ,
+      "id" : 4
+    }
+  ]
+}

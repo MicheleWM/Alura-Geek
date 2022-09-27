@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    max-width: 100vw;
+    background-color:#000000;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.brandCrowd{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(189, 15, 116);
+}
+.btn-logout{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    font-size: 1.1em;
+    color: #df5aa7;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+    transition: all 1s;
+}
+.alert {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    color: red;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 115px;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .desktop-nav config */
+.desktop-nav {
+    width: 80vw;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.justify-content {
+    justify-content: space-between;
+}
+.search {
+    width: 393px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #df5aa7;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.search-icon {
+    position: relative;
+
+}
+
+.search-icon fa-solid {
+    color: #df5aa7;
+    position: relative;
+    right: 100%;
+}
+
+input::placeholder {
+    color:white;
+  }
+
+.input-search {
+    width: 393px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color:#df5aa7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+fa-solid {
+    color: #a2a2a2;
+    position: relative;
+    right: 100%;
+}
+.btn-search{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-login {
+    width: 182px;
+    height: 51px;
+    background-color: #df5aa7;
+   /* border: 1px solid #df5aa7;*/
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #adff2f;
+    border:none;
+    transition: all 1s;
+}
+
+/* .mobile-nav config */
+.mobile-nav {
+    width: 90vw;
+    display: none;
+    gap: 10px;
+}
+.banner {
+    display: flex;
+    width: 100vw;
+    height: 352px;
+    background-color:#000000;
+    background-image: url(../img/banner-geek.png)/*,linear-gradient(to right, rgba(66,27,94, 10), rgb(1, 202, 231))*/;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    justify-content: center;
+
+
+}
+.text-banner {
+    width: 80%;
+    height: 100%;
+    padding: 0px 50px;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 140px;
+    text-shadow: 0.1em 0.1em 0.15em #f10c6c;
+    color: rgb(211, 219, 210);
+}
+
+.tumb img{
+    width: 250px;
+}
+.display-products {
+    width: 90vw;
+    margin-top: 64px;
+}
+
+.product-header {
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.product-category h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.btn-link {
+    color: #df5aa7;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.group-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:16px
+}
+
+.card {
+    min-width: 176px;
+    margin: 64px 0;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 18px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.btn-primary {
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+    background-color:#df5aa7;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #adff2f;
+    border:none;
+    transition: all 1s;
+}
+/* Footer */
+.footer {
+    display: flex;
+    padding: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+.links {
+    display: flex;
+    width: 20%;
+
+    flex-direction: column;
+    line-height: 19px;
+    gap:24px
+}
+
+.links>a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+.contact-form{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap:8px; 
+}
+#name{
+    height: 56px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 1px solid #c8c8c8;   
+}
+
+#msg{
+    height: 82px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 1px solid #c8c8c8;
+    resize: none;
+}
+    .btn-send{
+    width: 160px;
+    height: 51px;
+    color: white;
+    border: none;
+    background-color: #df5aa7;
+    cursor: pointer;
+}
+.developer-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e05aa2;
+    font-weight: bold;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.829);
+    z-index: 2;
+}
+
+.modal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-msg{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF00FF;
+    text-transform: uppercase;
+}
+
+.btn-confirm {
+    width: 150px;
+    height: 40px;
+    background-color: #FF00FF;
+    border:none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/* mobile */
+@media (max-width:930px) {
+    /* navbar config */
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-search {
+        font-size: 1.5em;
+    }
+    .text-banner{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        background-color: #0000006c;
+    }
+    .group-cards {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer{
+        display: flex;
+        gap: 35px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .links{
+        text-align: center;
+        width: 100%;    
+    }
+    .contact-form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn-send{
+        width: 100%;
+    }
+    /* login */
+    .input-login{
+        Width: 80vw !important;
+    }
+    .btn-enter {
+        Width: 80vw !important;
+    }
+    .btn-login {
+        Width:30vw;
+    }
+    /* all products */
+    .add-header{
+        display: flex;
+        flex-wrap: wrap;
+        gap:15px
+    }
+    .product-header{
+        width: 100vw;
+        display: flex;
+        justify-content:center
+    }
+    .product-category h2{
+        display: flex;
+        width: 100vw;
+        
+    }
+    .all-product-category h2{
+        display: flex;
+        width: 80vw;
+        justify-content:center
+
+    }
+    .product-btn{
+        display: flex;
+        width: 80vw;
+        justify-content: center;
+    }
+}

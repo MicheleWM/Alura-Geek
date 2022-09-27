@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/global.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <nav class="navbar">
+        <section class="desktop-nav justify-content">
+            <div class="logo">
+                <img src="assets/img/Logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="search" name="search" id="input-search" class="input-search"
+                    placeholder="O que deseja encontrar?" autocomplete="off">
+                <span class="search-icon">
+                    <button type="button" id="btnLogin" class="btn-search"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </span>
+            </div>
+            <div class="btn-login">
+                <a href="view/login.html">
+                    <button type="button" id="btnLogin" class="btn-login">Login</button>
+                </a>
+            </div>
+        </section>
+        <section class="mobile-nav">
+            <img src="assets/img/Logo.png" alt="logo">
+                <!-- <button type="button" id="btnLogin" class="btn-login">Login</button> -->
+            <a href="view/login.html">
+                <button type="button" id="btnLogin" class="btn-login">Login</button>
+            </a> 
+            <button type="button" id="btnSearch" class="btn-search"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+    </nav>
+    <header>
+        <section class="banner">
+            <div class="text-banner">
+                <h2>Dezembro Promocional</h2>
+                <p>Produtos selecionados com até 33% de desconto</p>
+                <a href="#" target="_blank">
+                    <button class="btn-primary">Ver Consoles</button>
+                </a>
+            </div>
+        </section>
+    </header>
+    <section class="brandCrowd">
+        <div data-brandCrowd_name></div>
+    </section>
+    <main>
+        <section class="display-products">
+            <div class="product-header">
+                <div class="product-category">
+                    <h2>Nossos Produtos</h2>
+                </div>
+                <div class="product-btn">
+                    <button class="btn-link">Ver tudo <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+             <div class="group-cards" data-card>
+          
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- footer carregado via js -->
+    </footer>
+    <script src="javascript/app/brandCrowd.js"></script>
+    <script type="module" src="javascript/api/controller/ProductList-controller.js"></script>
+    <script src="javascript/app/index.js"></script>
+    <script src="javascript/app/footer.js"></script>
+    <script src="https://kit.fontawesome.com/67f504bb87.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
